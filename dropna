@@ -1,0 +1,4 @@
+data.dropna(how = 'all')    # 传入这个参数后将只丢弃全为缺失值的那些行
+data.dropna(axis = 1)       # 丢弃有缺失值的列（一般不会这么做，这样会删掉一个特征）
+data.dropna(axis=1,how="all")   # 丢弃全为缺失值的那些列
+data.dropna(axis=0,subset = ["Age", "Sex"])   # 丢弃‘Age’和‘Sex’这两列中有缺失值的行   
